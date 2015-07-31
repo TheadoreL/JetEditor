@@ -1,0 +1,132 @@
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	letter-spacing:0.5px;
+}
+body{font-family:Arial Narrow, Arial, sans-serif; margin:0; padding:0; } 
+#wrapper{ width:1189px; margin:0 auto; text-align:center; margin-left:60px;} 
+fieldset{ 
+width:100%; 
+padding:0 50px 50px; 
+margin:0px; text-align:left;
+background:rgb(244,244,244);
+border:0;
+}
+.bai{
+	margin-left:100px; width:60px}
+.wu{
+	margin-left:50px; width:60px}	
+#f{
+	width:80px} 
+.im{
+	float:right; 
+	position:absolute;
+	top:90px;
+	overflow:hidden;
+	 height:580px; 
+	 right:120px; 
+	 opacity:0.5
+}
+.labela{ margin-left:17px}
+.labelb{ margin-left:34px}
+label{ 
+font-size:17px; 
+font-weight:bold; 
+margin:17px 0 7px; 
+text-align:left; 
+text-shadow:1px 1px 0 #fff; 
+} 
+a{ 
+font-size:12px; 
+margin:17px 0 7px; 
+text-align:left; 
+text-shadow:1px 1px 0 #fff; 
+} 
+.ss{ color: #F00;}
+.s{ font-size:10px; color:#000;font-weight:bold;letter-spacing:1px }
+textarea{ 
+resize:both; 
+max-width:460px; 
+font-size:15px; 
+margin-left:86px; 
+margin-top:-20px;
+}
+input{ font-size:15px;} 
+#rangevalue{ 
+display:block; 
+text-align:right; 
+margin-top:-25px; 
+} 
+.clearfix{ 
+clear:both; 
+} 
+#top {
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 70px;
+	background-color: #303030;
+}
+
+#top_logo {
+	width: 300px;
+	float: left;
+	vertical-align: middle;
+	height: 65px;
+	line-height: 65px;
+	padding: 1px 1px 1px 40px;
+}
+
+#top_links {
+	width: 480px;
+	height: 65px;
+	float: right;
+	line-height: 65px;
+	color: #ADADAD;
+	line-height: 65px;
+	position: relative;
+}
+
+#top_op {
+	width: 400px;
+}
+
+#top_op ul {
+	list-style-type: none;
+}
+
+#top_op ul li {
+	display: inline-block;
+	margin-right: 20px;
+}
+
+#top_op ul li img {
+	vertical-align: text-top;
+}
+
+#side {
+	position: absolute;
+	left: 0;
+	top: 70px;
+	bottom: 0px;
+	width: 60px;
+	overflow: hidden;
+	height:660px;
+/* 	border-right: 5px solid #DDDDDD; */
+}
+#left_menu {
+	width: 60px;
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	background: #044599;
+	overflow: hidden;
+	height:660px;
+}
+#TabPage2 li {
+	padding: 19px 9px 19px 15px;
+	cursor: pointer;
+}
+.iii{vertical-align:middle; margin-left:50px}
+#TabPage2{ height:200px; margin-top:50px;}

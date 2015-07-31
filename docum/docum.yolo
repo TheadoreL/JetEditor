@@ -1,0 +1,23 @@
+<link href="<{$smarty.const.RES_PATH}>Admin/View/docum/style/style.css" rel="stylesheet" type="text/css">
+<{*******************************************************************************don't change it*************************************************************************************}>
+<{***Module: print form***}>
+<{***Author: Theadore Lee;***}>
+<{***Create @ 2014.12.11;***}>
+
+<form method="post" action="<{$smarty.const.SCR_PATH}>Admin/Docum_result" enctype="multipart/form-data">
+<{foreach key = key item = item from = $displayArray['include']}>
+<{if $item == 'input'}>
+	<{include file = "./input.yolo" input_class = $displayArray['main'][$key]['class'] input_title = $displayArray['main'][$key]['title'] input_type = $displayArray['main'][$key]['type'] input_name = $displayArray['main'][$key]['input_name'] input_value = $displayArray['edit'][$key]}>
+<{elseif $item == 'xheditor'}>
+	<{include file = "./xheditor.yolo" xheditor_class = $displayArray['main'][$key]['class'] xheditor_title = $displayArray['main'][$key]['title'] xheditor_name = $displayArray['main'][$key]['input_name'] xh_value = $displayArray['edit'][$key]}>
+<{elseif $item == 'select'}>
+	<{include file = "./select.yolo" select_class = $displayArray['main'][$key]['class'] select_title = $displayArray['main'][$key]['title'] select_name = $displayArray['main'][$key]['input_name'] select_output = $displayArray['main'][$key]['output'] select_value = $displayArray['main'][$key]['value'] select_ed = $displayArray['edit'][$key]}>
+<{elseif $item == 'radio'}>
+	<{include file = "./radio.yolo" radio_class = $displayArray['main'][$key]['class'] radio_title = $displayArray['main'][$key]['title'] radio_name = $displayArray['main'][$key]['input_name'] radio_value = $displayArray['main'][$key]['value'] radio_output = $displayArray['main'][$key]['output'] radio_selected = $displayArray['edit'][$key]}>
+<{elseif $item == 'checkbox' || $item == 'checkfield'}>
+	<{include file = "./checkbox.yolo" checkbox_class = $displayArray['main'][$key]['class'] checkbox_title = $displayArray['main'][$key]['title'] checkbox_name = $displayArray['main'][$key]['input_name'] checkbox_value = $displayArray['main'][$key]['value'] checkbox_output = $displayArray['main'][$key]['output'] check_select = $displayArray['edit'][$key]}>
+<{/if}>
+<{/foreach}>
+<td colspan="2" class="<{$displayArray['main'][0]['class']}>"><div align="center"><input name="submit" type="image" src="<{$smarty.const.RES_PATH}>Admin/View/docum/images/submit.png">
+</form>
+<{*******************************************************************************don't change it*************************************************************************************}>

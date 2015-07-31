@@ -1,0 +1,27 @@
+<head>
+<script charset="utf-8" src="<{$smarty.const.LIB_PATH}>kindeditor/kindeditor-all.js"></script>
+<script charset="utf-8" src="<{$smarty.const.LIB_PATH}>kindeditor/lang/zh_CN.js"></script>
+<script>
+        var editor;
+			KindEditor.ready(function(K) {
+				editor = K.create('textarea[name="<{$xheditor_name}>"]', {
+					uploadJson : '<{$smarty.const.LIB_PATH}>kindeditor/php/upload_json.php',
+					fileManagerJson : '<{$smarty.const.LIB_PATH}>kindeditor/php/file_manager_json.php',
+					allowFileManager : true
+				});
+			});
+</script>
+
+</head>
+
+<tr>
+	<td class="<{$xheditor_class}>">
+		<div align="left"><{$xheditor_title}>：</div>
+	</td>
+	<td>
+		<div align="left">
+			<textarea name="<{$xheditor_name}>"  id="elm2" cols="100" rows="40"><{$xh_value}></textarea>
+			<br/>
+		</div>
+	</td>
+</tr>

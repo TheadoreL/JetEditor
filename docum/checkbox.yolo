@@ -1,0 +1,12 @@
+<tr>
+	<td class="<{$checkbox_class}>">
+		<div align="left"><{$checkbox_title}>：</div>
+	</td>
+	<td>
+		<div align="left">
+		<label>
+			<{html_checkboxes name = $checkbox_name values = $checkbox_value output = $checkbox_output selected = $check_select}>
+		</label>
+		</div>
+	</td>
+</tr>

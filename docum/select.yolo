@@ -1,0 +1,8 @@
+<tr>
+	<td><div class="<{$select_class}>" align="left"><{$select_title}>：</div></td>
+	<td>
+		<select name="<{$select_name}>" id="<{$select_name}>">
+		<{html_options output = $select_output values = $select_value selected = $select_ed }>
+		</select>
+	</td>
+</tr>

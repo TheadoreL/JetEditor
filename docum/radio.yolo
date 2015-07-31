@@ -1,0 +1,12 @@
+<tr>
+	<td class="<{$radio_class}>">
+		<div align="left"><{$radio_title}>：</div>
+	</td>
+	<td>
+		<div align="left">
+		<label>
+			<{html_radios name = $radio_name values = $radio_value output = $radio_output selected = $radio_selected}>
+		</label>
+		</div>
+	</td>
+</tr>

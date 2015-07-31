@@ -1,0 +1,20 @@
+<{if $input_type == 'hidden'}>	
+	<input type="<{$input_type}>" name="<{$input_name}>" value = "<{$input_value}>"/>
+<{else}>
+<tr>
+	<td class="<{$input_class}>">
+		<div align="left"><{$input_title}>：</div>
+	</td>
+	<td>
+		<div align="left">
+		<label>
+			<{if $input_type == 'password'}>
+			<input type="<{$input_type}>" name="<{$input_name}>" value = ""/>
+			<{else}>
+			<input type="<{$input_type}>" name="<{$input_name}>" value = "<{$input_value}>"/>
+			<{/if}>
+		</label>
+		</div>
+	</td>
+</tr>
+<{/if}>
